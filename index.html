@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Vault - Control Panel</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="logo-dag.png"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 </head>
 <body>
 
@@ -25,9 +25,7 @@
         <div id="screen-content">
             <h3>CENTRAL BANK - NODE: CH-ZUR-01 <span class="blink">|</span></h3>
             <div id="log-container">
-                <p id="message-log">
-                    > [SYSTEM] STANDBY MODE... READY FOR BOOT.
-                </p>
+                <p id="message-log">> [SYSTEM] STANDBY MODE... READY FOR BOOT.</p>
             </div>
             <h2 id="hacker-sig">.teffsO.gaD yb hcaerB</h2>
         </div>
@@ -40,17 +38,24 @@
             <button id="btn-start">START SYSTEM</button>
             <button id="btn-reset" class="hidden">RESET SYSTEM</button>
             <button id="btn-arresta" class="hidden">SHUTDOWN</button>
-            <button id="btn-attacco" class="btn-hidden hidden">INITIATE BREACH</button>
+            <button id="btn-attacco" class="btn-hidden hidden" aria-label="Initiate Breach">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2a5 5 0 0 0-5 5v3a3 3 0 0 0-3 3v6a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3v-6a3 3 0 0 0-3-3V7a5 5 0 0 0-5-5z"/>
+                    <path d="M10 17h.01"/>
+                    <path d="M14 17h.01"/>
+                    <path d="M10 13h4v1h-4z"/>
+                </svg>
+            </button>
         </div>
     </div>
 
     <footer class="credits">
-    <div class="footer-content">
-        <p>&copy; 2026 <strong>Dag Offset</strong> | Security Research & Development</p>
-        <p class="status">System Status: <span class="online">Verified & Active</span></p>
-    </div>
-</footer>
-    
+        <div class="footer-content">
+            <p>&copy; 2026 <strong>Dag Offset</strong> | Security Research & Development</p>
+            <p class="status">System Status: <span class="online">Verified & Active</span></p>
+        </div>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
