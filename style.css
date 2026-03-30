@@ -1,12 +1,15 @@
 body {
-    background-color: #0a0a0a;
+    /* ...altri tuoi stili... */
+    background-color: black;
+    color: #8a2be2;
+    font-family: 'Courier New', monospace;
+    
+    /* --- AGGIUNGI QUESTE LINEE --- */
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    flex-direction: column;
+    min-height: 100vh; /* Forza il body a essere alto almeno quanto lo schermo */
     margin: 0;
-    font-family: 'Courier New', Courier, monospace;
-    color: #bc13fe;
+    padding: 0;
 }
 
 .hidden { display: none !important; }
@@ -100,30 +103,42 @@ button {
 .blink { animation: flicker 0.8s infinite; }
 
 .credits {
+   
+    clear: both; 
+    width: 100%; 
+    
+    /* Centramento */
     text-align: center;
+    
+    /* Spaziatura */
     padding: 30px 10px;
-    background: rgba(0, 0, 0, 0.4); /* Un leggero stacco dal fondo */
+    margin-top: auto; 
+    
+    /* Estetica */
+    background: rgba(0, 0, 0, 0.4); 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #a0a0a0;
     font-size: 0.85rem;
-    border-top: 1px solid rgba(138, 43, 226, 0.2); /* Una linea sottile viola scuro */
-    margin-top: 60px;
+    border-top: 1px solid rgba(138, 43, 226, 0.2); 
+    
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.credits p {
+    margin: 5px 0;
 }
 
 .credits strong, .author-name {
-    color: #ffffff; /* Il tuo nome spicca in bianco */
+    color: #ffffff;
     letter-spacing: 1px;
     text-transform: uppercase;
-}
-
-.status .online {
-    color: #00ff41; /* Verde "Matrix" solo per lo status */
     font-weight: bold;
 }
 
-.warning {
-    font-size: 0.7rem;
-    text-transform: uppercase;
-    opacity: 0.6;
-    margin-top: 5px;
+.status .online {
+    color: #00ff41; 
+    font-weight: bold;
 }
